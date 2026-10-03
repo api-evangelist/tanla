@@ -1,23 +1,76 @@
 aid: tanla
+
 name: Tanla
-description: 'Tanla is a company surfaced via the API Evangelist harvest backlog (source: gartner-mq)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/65a4d6e71551dd4dd97a2ac6/65cc5b8916cba6d19f22b779_Rectangle%2067.png
+
+description: 'Tanla Platforms Limited provides a unified communications platform that integrates messaging, voice, email, and digital engagement services through a single API. Leveraging blockchain-based smart routing and end‑to‑end encryption, Tanla enables enterprises to deliver secure, scalable, and intelligent interactions across channels such as SMS, WhatsApp, RCS, email, and voice. The platform offers products like User.ai, Anti‑Spam, Anti‑Scam, Data Privacy, Enterprise‑AI, and Wise Albert, targeting industries from banking to e‑commerce, aiming to simplify digital communication workflows and enhance user experiences.'
+
 url: https://raw.githubusercontent.com/api-evangelist/tanla/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:gartner-mq
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-03 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-03'
+
 modified: '2026-10-03'
+
 tags:
 - Company
-apis: []
+- Communications
+- API
+- Messaging
+- Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/tanla-hosts.yml
+- type: Vendors
+  url: vendors/tanla-vendors.yml
+- type: TermsOfService
+  url: https://www.tanla.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.tanla.com/privacy-policy
+- type: Newsroom
+  url: https://www.tanla.com/newsroom
+- type: Leadership
+  url: https://www.tanla.com/leadership
+- type: Blog
+  url: https://www.tanla.com/blog
+- type: GettingStarted
+  url: https://tanla.com/newsroom/tanla-solutions-announces-onboarding-of-three-new-independent-directors
+- type: GitHubOrganization
+  url: https://github.com/Tanla
+- type: DomainSecurity
+  url: security/tanla-domain-security.yml
 - type: Website
   url: https://www.tanla.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The Tanla website provides API information only via JavaScript‑rendered pages with no machine‑readable OpenAPI or other contract.
+  evidence:
+    - url: https://www.tanla.com
+      status: 200
+  checked: '2026-10-03'
+x-enrichment:
+  date: '2026-10-03'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
